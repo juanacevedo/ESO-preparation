@@ -1,5 +1,5 @@
 ## Esmeraldo Situ Orbis
 Notes and preparation
 
-- [Progress and Tools](01_ESO_progress_and_tools.md)
-- [TEI Guidelines](02_ESO_TEI_Guidelines)
+- [Progress and Tools](01%20ESO%20progress%20and%20tools.md)
+- [TEI Guidelines](02%20ESO%20TEI%20Guidelines)
