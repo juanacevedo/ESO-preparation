@@ -25,10 +25,10 @@
 <br/>
 
 #### The Source Description
-<details><summary>[show/hide]</summary>
+<details open><summary>[show/hide]</summary>
 <br/>
 
-##### 1. Source Description
+### 1. Source Description
 tags : [`sourceDesc`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html)
 
 Preferable organization of code as any list entry can be referenced from text encoding. Entries can be more detailed and packed in a single place than along the file. This keeps the code clean, reusable, accessable.
@@ -52,7 +52,7 @@ __Example:__
 
 <br/>
 
-##### 2. List Objects
+### 2. List Objects
 tags : [`listObject`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listObject.html)  [`object`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-object.html)
 
 __Example:__ [`object` examples](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-object.html)
@@ -78,7 +78,7 @@ __Example:__ [`object` examples](https://tei-c.org/release/doc/tei-p5-doc/en/htm
 
 <br/>
 
-##### 3. List Organizations
+### 3. List Organizations
 tags : [`listOrg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listOrg.html) [`org`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html)
 
 Contains a list of elements, each of which provides information about an identifiable organization.
@@ -101,7 +101,7 @@ __Example:__ [`org` examples](https://tei-c.org/release/doc/tei-p5-doc/en/html/e
 
 <br/>
 
-##### 4. List Persons
+### 4. List Persons
 tags : [`listPerson`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPerson.html) [`person`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-person.html)
 
 Contains a list of descriptions, each of which provides information about an identifiable person or a group of people, for example the participants in a language interaction, or the people referred to in a historical source.
@@ -131,7 +131,7 @@ __Example:__ [`person` examples](https://tei-c.org/release/doc/tei-p5-doc/en/htm
 
 <br/>
 
-##### 5. List Places
+### 5. List Places
 tags : [`listPlace`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPlace.html) [`place`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-place.html)
 
 Contains a list of places, optionally followed by a list of relationships (other than containment) defined amongst them.
@@ -162,7 +162,7 @@ __Example:__ [`place` examples](https://tei-c.org/release/doc/tei-p5-doc/en/html
 
 <br/>
 
-##### 6. List Witnesses
+### 6. List Witnesses
 tags : [`listWit`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listWit.html) [`witness`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-witness.html)
 
 Lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
@@ -191,16 +191,18 @@ __Example:__ [`witness` examples](https://tei-c.org/release/doc/tei-p5-doc/en/ht
 <br/>
 
 __Note 2:__ No whitespaces are to be kept around the `<lb>` tag, as the programmer codes that decision depending on the purpose: text with fix-width or dynamic, or a toggle option.
+
 [&#x25b2; Return to Index](#index)
 </details>
+
 <br/>
 
 ---
 
 #### 2. TEI Text
-<details><summary>[show/hide]</summary>
+<details open><summary>[show/hide]</summary>
 
-##### 7. Page beginning
+### 7. Page beginning
 tags : [`pb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html)
 
 Marks the beginning of a new page in a paginated document.
@@ -224,7 +226,7 @@ __Example:__ [`pb` examples](https://www.tei-c.org/release/doc/tei-p5-doc/en/htm
 
 <br/>
 
-##### 8. Line beginning
+### 8. Line beginning
 tags : [`lb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html)
 
 Marks the beginning of a new typographic line in some edition or version of a text. Some times it breaks a word, a hyphen comes in place, but some books might not always print the hyphen.
@@ -247,7 +249,7 @@ __Note 2:__ No whitespaces are to be kept around the `<lb>` tag, as the programm
 
 <br/>
 
-##### 9. Choices
+### 9. Choices
 tags : [`choice`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) [`abbr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abbr.html) [`corr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) [`expan`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-expan.html) [`orig`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) [`reg`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) [`sic`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) [`unclear`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html)
 
 Groups a number of alternative encodings for the same point in a text.
@@ -285,7 +287,7 @@ __Example:__ [`choice` examples](https://www.tei-c.org/release/doc/tei-p5-doc/en
 
 <br/>
 
-##### 10. Numbers and Measures
+### 10. Numbers and Measures
 
 
 
