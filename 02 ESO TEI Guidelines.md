@@ -30,7 +30,7 @@ A more torward definitive tag composition is placed after the code examples, as 
 ---
 <br/>
 
-#### The Source Description
+### The Source Description
 
 [TEI Guidelines - 2.2.7 The Source Description](https://tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD3)
 > The sourceDesc element is the seventh and final component of the fileDesc element. It is a mandatory element and is used to record details of the source or sources from which a computer file is derived. This might be a printed text or manuscript, another computer file, an audio or video recording of some kind, or a combination of these.
@@ -38,7 +38,7 @@ A more torward definitive tag composition is placed after the code examples, as 
 <details open><summary>[show/hide]</summary>
 <br/>
 
-### 1. Source Description
+#### 1. Source Description
 tags : [`sourceDesc`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html)
 
 Preferable organization of code as any list entry can be referenced from text encoding. Entries can be more detailed and packed in a single place than along the file. This keeps the code clean, reusable, accessable.
@@ -80,7 +80,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 2. List Objects
+#### 2. List Objects
 tags : [`listObject`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listObject.html)  [`object`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-object.html)
 
 __Example:__ [`object`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-object.html)
@@ -117,7 +117,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 3. List Organizations
+#### 3. List Organizations
 tags : [`listOrg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listOrg.html) [`org`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html)
 
 Contains a list of elements, each of which provides information about an identifiable organization.
@@ -151,7 +151,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 4. List Persons
+#### 4. List Persons
 tags : [`listPerson`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPerson.html) [`person`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-person.html)
 
 Contains a list of descriptions, each of which provides information about an identifiable person or a group of people, for example the participants in a language interaction, or the people referred to in a historical source.
@@ -192,7 +192,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 5. List Places
+#### 5. List Places
 tags : [`listPlace`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPlace.html) [`place`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-place.html)
 
 Contains a list of places, optionally followed by a list of relationships (other than containment) defined amongst them.
@@ -240,7 +240,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 6. List Witnesses
+#### 6. List Witnesses
 tags : [`listWit`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listWit.html) [`witness`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-witness.html)
 
 Lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
@@ -287,10 +287,10 @@ __Proposed (WIP)__
 
 ---
 
-#### 2. TEI Text
+### TEI Text
 <details open><summary>[show/hide]</summary>
 
-### 7. Page beginning
+#### 7. Page beginning
 tags : [`pb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html)
 
 Marks the beginning of a new page in a paginated document.
@@ -328,7 +328,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 8. Line beginning
+#### 8. Line beginning
 tags : [`lb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html)
 
 Marks the beginning of a new typographic line in some edition or version of a text. Some times it breaks a word, a hyphen comes in place, but some books might not always print the hyphen.
@@ -351,16 +351,16 @@ __Note 2:__ No whitespaces are to be kept around the `<lb>` tag, as the programm
 __Proposed (WIP)__
 ```xml
 <p>
-    <lb/>
-    <lb break="no"/>
-    <lb break="no" type="hyphenated">
+    <lb edRef=""/>
+    <lb edRef="" break="no"/>
+    <lb edRef="" break="no" type="hyphenated">
 </p>
 ```
 [&#x25b2; Return to Index](#index)
 
 <br/>
 
-### 9. Choices
+#### 9. Choices
 tags : [`choice`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) [`abbr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abbr.html) [`corr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) [`expan`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-expan.html) [`orig`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) [`reg`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) [`sic`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) [`unclear`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html)
 
 Groups a number of alternative encodings for the same point in a text.
@@ -404,7 +404,8 @@ __Proposed (WIP)__
 
 <br/>
 
-### 10. Numbers and Measures
+#### 10. Numbers and Measures
+<!-- TODO MM : numbers and measures content -->
 tags :
 ```xml
 ```
@@ -418,7 +419,8 @@ __Proposed (WIP)__
 
 <br/>
 
-### 11. Dates
+#### 11. Dates
+<!-- TODO MM : dates content -->
 tags :
 ```xml
 ```
@@ -432,7 +434,8 @@ __Proposed (WIP)__
 
 <br/>
 
-### 12. Notes
+#### 12. Notes
+<!-- TODO MM : notes content -->
 tags :
 
 [note on app example](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-app.html#index-egXML-d39e91097)
@@ -448,7 +451,8 @@ __Proposed (WIP)__
 
 <br/>
 
-### 13. Geographic Location
+#### 13. Geographic Location
+<!-- TODO MM : improve content -->
 tags : [`geoDecl`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geoDecl.html) [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geo.html)
 
 __Examples:__ [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-geo.html)
@@ -480,7 +484,7 @@ __Proposed (WIP)__
 
 <br/>
 
-### 14. Critical Apparatus
+#### 14. Critical Apparatus
 tags : [`app`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-app.html) [`lem`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-lem.html) [`rdg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-rdg.html)
 
 TEI Chapter [12. Critical Apparatus](https://tei-c.org/release/doc/tei-p5-doc/en/html/TC.html)
@@ -535,7 +539,7 @@ __Proposed (WIP)__
 
 <!-- ######################################## TOPIC Template:
 
-### 14. Critical Apparatus
+#### 14. Critical Apparatus
 tags : [` `]()
 
 __Examples:__

@@ -3,7 +3,7 @@
                 "return to index" link
  -->
 
-### <span style="color:#E63946">Index</span>
+### Index
 
 1. [Articles / Reading](#articles-/-reading)
 2. [Materials](#materials)
@@ -12,10 +12,10 @@
 
 <br/>
 
-#### <span style="color:#E63946">Articles / Reading</span>
+#### Articles / Reading
 <details open><summary>[show/hide]</summary>
 
-* __<span style="color:#46ACAF">Article</span>__
+* __Article__
     1. [Getting started with editing TEI XML using Atom](https://andrewdunning.ca/getting-started-editing-tei-xml-atom)
 
 * __Editorial / Periodic__  
@@ -23,11 +23,11 @@
     2. [Scholarly Editing](https://scholarlyediting.org/)  
     3. [Digital Medievalist](https://journal.digitalmedievalist.org/)
 
-[<span style="color:#EF8089">&#x25b2; Return to Index](#index)
+[&#x25b2; Return to Index](#index)
 </details>
 <br/>
 
-#### <span style="color:#E63946">Materials</span>
+#### Materials
 <details open><summary>[show/hide]</summary>
 <br/>
 
@@ -41,7 +41,7 @@
 </details>
 <br/>
 
-#### <span style="color:#E63946">Websites</span>
+#### Websites
 <details open><summary>[show/hide]</summary>
 
 * __Learning__
@@ -58,7 +58,7 @@
 </details>
 <br/>
 
-#### <span style="color:#E76F51">Projects and Study Cases</span>
+#### Projects and Study Cases
 <details open><summary>[show/hide]</summary>
 <br/>
 
