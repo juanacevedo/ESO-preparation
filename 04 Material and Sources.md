@@ -1,17 +1,21 @@
-<style>
-    h2, h3, h4{
-        color: Tomato;
-    }
-</style>
-
 <!-- TODO MM :  include menu at the all leves;
                 collapse func;
                 "return to index" link
  -->
 
-## Articles / Reading
+### <span style="color:#E63946">Index</span>
 
-* __Article__
+1. [Articles / Reading](#articles-/-reading)
+2. [Materials](#materials)
+3. [Websites](#websites)
+4. [Projects and Study Cases](#projects-and-study-Cases)
+
+<br/>
+
+#### <span style="color:#E63946">Articles / Reading</span>
+<details open><summary>[show/hide]</summary>
+
+* __<span style="color:#46ACAF">Article</span>__
     1. [Getting started with editing TEI XML using Atom](https://andrewdunning.ca/getting-started-editing-tei-xml-atom)
 
 * __Editorial / Periodic__  
@@ -19,8 +23,13 @@
     2. [Scholarly Editing](https://scholarlyediting.org/)  
     3. [Digital Medievalist](https://journal.digitalmedievalist.org/)
 
+[<span style="color:#EF8089">&#x25b2; Return to Index](#index)
+</details>
+<br/>
 
-## Materials
+#### <span style="color:#E63946">Materials</span>
+<details open><summary>[show/hide]</summary>
+<br/>
 
 1. Workshop [From Analogue Documents to Electronic Texts: Introduction to TEI XML Editing in Multilingual Environments](http://www.sitzextase.de/TeachingTei/slides/slidesDHIB2015/) Slide presentation online.
 2. [TEI by Example](https://teibyexample.org/)  
@@ -28,7 +37,13 @@
 4. [Text Technologies Hub](https://tthub.io/) (spanish content)
 5. Video [Introduction to Regular Expressions (Regex)](https://www.youtube.com/watch?v=sa-TUpSx1JA)
 
-## Websites
+[&#x25b2; Return to Index](#index)
+</details>
+<br/>
+
+#### <span style="color:#E63946">Websites</span>
+<details open><summary>[show/hide]</summary>
+
 * __Learning__
     1. [TEI Guidelines](https://tei-c.org/) Explanatory and by Reference.
     2. [W3Schools](https://www.w3schools.com/) Explanatory and by Reference, on several programming languages, web oriented. Includes playground along examples.
@@ -39,8 +54,14 @@
 * __Entities__
     1. [European Association for Digital Humanities](https://eadh.org/)
 
+[&#x25b2; Return to Index](#index)
+</details>
+<br/>
 
-## Projects and Study Cases
+#### <span style="color:#E76F51">Projects and Study Cases</span>
+<details open><summary>[show/hide]</summary>
+<br/>
+
 1. [The Newton Project](https://www.newtonproject.ox.ac.uk/) Includes [Tagging guidelines](https://www.newtonproject.ox.ac.uk/about-us/tagging-and-transcription-guidelines)
 2. [Corpus Corporum](http://www.mlat.uzh.ch/MLS/index.php?lang=0) Searchable Latin texts with Dictionaries
 3. [Early Modern Ottoman Culture of Learning](https://mecmua.acdh.oeaw.ac.at/)
@@ -53,3 +74,7 @@
 10. [Islam in the Horn of Africa, A Comparative Literary Approach](http://www.islhornafr.eu/index.html)
 11. [CELT - Corpus of Electronic Texts](https://www.ucc.ie/en/research-sites/celt/)
 12. [Du Cange, et al., Glossarium](http://ducange.enc.sorbonne.fr/?clear=1) __Note MM :__ The page is not fully functional.
+
+[&#x25b2; Return to Index](#index)
+</details>
+<br/>

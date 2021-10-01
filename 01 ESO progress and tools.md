@@ -1,8 +1,3 @@
-<style>
-    h2, h3, h4{
-        color: Tomato;
-    }
-</style>
 # Esmeraldo de Situ Orbis
 
 - 1892 edition - printed . pdf 188 pag
@@ -10,16 +5,16 @@
 
 ## 1. Structure
 
-### 2021 RUTTER Edition
+### 2021 RUTTER Edition  
 <details><summary>[show/hide]</summary>
-- `<front>`
-- `<body>`
-- `<back>`
+- front
+- body
+- back
 </details>
 
 ### 1892 ed.
 <details><summary>[show/hide]</summary>
-- `<front>` <!-- TODO MM: verificar termos tags do <front> -->
+- front <!-- TODO MM: verificar termos tags do <front> -->
 
   - [ ] cover
   - [ ] titlepage
@@ -30,14 +25,14 @@
   - [ ] table of contents
   - [ ] prologue
 
-- `<body>`
+- body
 
   - [ ] first book . 33 chapters
   - [ ] second book . 1 intro + 11 chapters
   - [ ] third book . 1 intro + 9 chapters
   - [ ] fourth book . 1 intro + 6 chapters
 
-- `<back>`
+- back
 
   - [ ] notes
   - [ ] personalities and geopgraphy index
