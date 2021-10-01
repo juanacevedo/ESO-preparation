@@ -1,3 +1,9 @@
+<style>
+    h2, h3, h4{
+        color: Tomato;
+    }
+</style>
+
 <!-- TODO MM :  include menu at the all leves;
                 collapse func;
                 "return to index" link
@@ -19,7 +25,8 @@
 1. Workshop [From Analogue Documents to Electronic Texts: Introduction to TEI XML Editing in Multilingual Environments](http://www.sitzextase.de/TeachingTei/slides/slidesDHIB2015/) Slide presentation online.
 2. [TEI by Example](https://teibyexample.org/)  
 3. [Obdurodon - Digital Humanities](http://dh.obdurodon.org/)  
-4. [Text Technologies Hub]() (spanish content)
+4. [Text Technologies Hub](https://tthub.io/) (spanish content)
+5. Video [Introduction to Regular Expressions (Regex)](https://www.youtube.com/watch?v=sa-TUpSx1JA)
 
 ## Websites
 * __Learning__

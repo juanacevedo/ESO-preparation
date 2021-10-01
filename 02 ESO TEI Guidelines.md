@@ -20,10 +20,10 @@ A more torward definitive tag composition is placed after the code examples, as 
     8. [Line beginning](#8-line-beginning)
     9. [Choices](#9-choices)
     10. [~~Numbers and Measures~~](#10-numbers-and-measures)
-    11. [~~~Dates~~](#11-dates)
+    11. [~~Dates~~](#11-dates)
     12. [~~Notes~~](#12-notes)
     13. [~~Geographic Location~~](#13-geographic-location)
-    14. [~~Critical Apparatus~~](#14-critical-apparatus)
+    14. [Critical Apparatus](#14-critical-apparatus)
 
 <br/>
 
@@ -225,8 +225,14 @@ __Example:__ [`place`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples
 __Proposed (WIP)__
 ```xml
 <listPlace>
+    <!-- Place -->
     <place xml:id="">
-        <!-- TODO MM : place inner tags -->
+        <!-- TODO MM : place oriented inner tags -->
+    </place>
+
+    <!-- Geographic -->
+    <place xml:id="">
+        <!-- TODO MM : geographic oriented inner tags -->
     </place>
 </listPlace>
 ```
