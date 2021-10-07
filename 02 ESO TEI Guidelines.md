@@ -11,19 +11,25 @@ A more torward definitive tag composition is placed after the code examples, as 
     2. [List Objects](#2-list-objects)
     3. [List Organizations](#3-list-organizations)
     4. [List Persons](#4-list-persons)
-    5. [List Persons](#5-list-places)
+    5. [List Places](#5-list-places)
     6. [List Witnesses](#6-list-witnesses)
+    7. [~~List Animalia~~](#7-list-animalia)
+    8. [~~List Plantae~~](#8-list-animalia)
 
 * [TEI Text](#tei-text)
 
-    7. [Page beginning](#7-page-beginning)
-    8. [Line beginning](#8-line-beginning)
-    9. [Choices](#9-choices)
-    10. [~~Numbers and Measures~~](#10-numbers-and-measures)
-    11. [~~Dates~~](#11-dates)
-    12. [~~Notes~~](#12-notes)
-    13. [~~Geographic Location~~](#13-geographic-location)
-    14. [Critical Apparatus](#14-critical-apparatus)
+    1. [Page beginning](#1-page-beginning)
+    2. [Line beginning](#2-line-beginning)
+    3. [Choices](#3-choices)
+    4. [~~Numbers and Measures~~](#4-numbers-and-measures)
+    5. [~~Dates~~](#5-dates)
+    6. [~~Notes~~](#6-notes)
+    7. [~~Geographic Location~~](#7-geographic-location)
+    8. [Critical Apparatus](#8-critical-apparatus)
+
+* [ODD - One Document Does it all](#odd---one-document-does-it-all)  
+
+    1. [Schemma Speficication](#1-schema-specification)
 
 <br/>
 
@@ -285,12 +291,52 @@ __Proposed (WIP)__
 
 <br/>
 
+#### 7. List Animalia
+tags : [` `]()
+
+Yet to define proper method.
+<!-- TODO MM : animalia yet to define proper method -->
+
+__Examples:__
+```xml
+```
+
+<br/>
+
+__Proposed (WIP)__
+```xml
+```
+
+[&#x25b2; Return to Index](#index)
+
+<br/>
+
+#### 8. List Plantae
+tags : [` `]()
+
+Yet to define proper method.
+<!-- TODO MM : plantae yet to define proper method -->
+
+__Examples:__
+```xml
+```
+
+<br/>
+
+__Proposed (WIP)__
+```xml
+```
+
+[&#x25b2; Return to Index](#index)
+
+<br/>
+
 ---
 
 ### TEI Text
 <details open><summary>[show/hide]</summary>
 
-#### 7. Page beginning
+#### 1. Page beginning
 tags : [`pb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html)
 
 Marks the beginning of a new page in a paginated document.
@@ -328,7 +374,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 8. Line beginning
+#### 2. Line beginning
 tags : [`lb`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html)
 
 Marks the beginning of a new typographic line in some edition or version of a text. Some times it breaks a word, a hyphen comes in place, but some books might not always print the hyphen.
@@ -360,7 +406,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 9. Choices
+#### 3. Choices
 tags : [`choice`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) [`abbr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abbr.html) [`corr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) [`expan`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-expan.html) [`orig`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) [`reg`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) [`sic`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) [`unclear`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html)
 
 Groups a number of alternative encodings for the same point in a text.
@@ -404,7 +450,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 10. Numbers and Measures
+#### 4. Numbers and Measures
 <!-- TODO MM : numbers and measures content -->
 tags :
 ```xml
@@ -419,7 +465,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 11. Dates
+#### 5. Dates
 <!-- TODO MM : dates content -->
 tags :
 ```xml
@@ -434,7 +480,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 12. Notes
+#### 6. Notes
 <!-- TODO MM : notes content -->
 tags :
 
@@ -451,7 +497,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 13. Geographic Location
+#### 7. Geographic Location
 <!-- TODO MM : improve content -->
 tags : [`geoDecl`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geoDecl.html) [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geo.html)
 
@@ -484,7 +530,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 14. Critical Apparatus
+#### 8. Critical Apparatus
 tags : [`app`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-app.html) [`lem`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-lem.html) [`rdg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-rdg.html)
 
 TEI Chapter [12. Critical Apparatus](https://tei-c.org/release/doc/tei-p5-doc/en/html/TC.html)
@@ -536,11 +582,69 @@ __Proposed (WIP)__
 
 </details>
 
+### ODD - One Document Does it all
+
+<details open><summary>[show/hide]</summary>
+<br/>
+
+#### 1. Schema Speficication
+[TEI by Examble - Module 8: Customising TEI, ODD, Roma](https://teibyexample.org/tutorials/TBED08v00.htm)  
+[TEI Guidelines - 22.8 Building a TEI Schema](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDbuild)  
+
+
+
+tags : [`schemaSpec`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html) [`moduleRef`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html)  
+attributes:  
+[att.identified](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.identified.html): `@ident` `@predeclare` `@module`  
+[att.combinable](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html): `@mode`
+
+__Examples:__
+```xml
+<!-- link schemas to our TEI file -->
+<?xml-model href="tei_tite.rng" type="application/xml" ?>
+<?xml-model href="checkLinks.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="tei_tite.odd" type="application/tei+xml" schematypens="http://www.tei-c.org/ns/1.0" ?>
+
+<!-- [...] -->
+
+<!-- ODD schemaSpec element -->
+<schemaSpec ident="T​BEcustom" start="T​EI" prefix="tei_" targetLang="en" docLang="en">
+    <!-- required minimal header elements -->
+    <moduleRef key="header" include="tei​Header file​Desc title​Stmt publication​Stmt source​Desc"/>
+    <!-- required core elements (p and title for use in titleStmt) -->
+    <moduleRef key="core" include="p title"/>
+    <!-- required textstructure elements (TEI, text, and body) -->
+    <moduleRef key="textstructure" include="T​EI text body"/>
+    <!-- required module tei instantiates lots of classes used for further expansion of this odd -->
+    <moduleRef key="tei"/>
+
+    <!-- or directly specify the elements to be included, without need to specify its module -->
+    <elementRef key="linkGroup"/>
+    <!-- or directly specify subset of attributes -->
+    <classRef key="att.global.linking" include="corresp"/>
+</schemaSpec>
+```
+
+<br/>
+
+__Proposed (WIP)__
+```xml
+<schemaSpec ident="TEIP5_ESO_custom" docLang="pt">
+    <moduleRef key="header"
+        include=""/>
+    <moduleRef key="core"
+        include=""/>
+    <moduleRef key="textstructure"
+        include=""/>
+    <moduleRef key="tei"/>
+</schemaSpec>
+```
+
 
 <!-- ######################################## TOPIC Template:
 
 #### 14. Critical Apparatus
-tags : [` `]()
+tags : [``]()
 
 __Examples:__
 ```xml

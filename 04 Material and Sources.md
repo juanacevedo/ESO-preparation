@@ -22,6 +22,7 @@
     1. [Journal of the Text Encoding Initiative](https://journals.openedition.org/jtei/)  
     2. [Scholarly Editing](https://scholarlyediting.org/)  
     3. [Digital Medievalist](https://journal.digitalmedievalist.org/)
+    4. [Digital Scholarship in the Humanities](https://academic.oup.com/dsh)
 
 [&#x25b2; Return to Index](#index)
 </details>
@@ -74,6 +75,7 @@
 10. [Islam in the Horn of Africa, A Comparative Literary Approach](http://www.islhornafr.eu/index.html)
 11. [CELT - Corpus of Electronic Texts](https://www.ucc.ie/en/research-sites/celt/)
 12. [Du Cange, et al., Glossarium](http://ducange.enc.sorbonne.fr/?clear=1) __Note MM :__ The page is not fully functional.
+13. [Scholarly Editing](https://scholarlyediting.org/).
 
 [&#x25b2; Return to Index](#index)
 </details>
