@@ -188,9 +188,38 @@ __Example:__ [`person`](https://tei-c.org/release/doc/tei-p5-doc/en/html/example
 
 __Proposed (WIP)__
 ```xml
+<!-- TODO MM : person inner tags -->
 <listPerson>
     <person xml:id="">
-        <!-- TODO MM : person inner tags -->
+        <!-- NAMES --> <!-- mandatory -->
+        <persName xml:lang="">
+            <forename></forename>
+            <surname></surname>
+        </persName>
+        <!-- BIRTH --> <!-- mandatory -->
+        <birth when="" notAfter="" notBefore="">
+            <placeName ref="">
+                <country ref=""></country>
+                <region ref=""></region>
+                <settlement ref=""></settlement>
+            </placeName>
+        </birth>
+        <!-- DEATH --> <!-- mandatory -->
+        <death when="" notAfter="" notBefore="">
+            <placeName ref="">
+                <country ref=""></country>
+                <region ref=""></region>
+                <settlement ref=""></settlement>
+            </placeName>
+        </death>
+        <sex></sex>
+        <idno></idno>
+        <nationality></nationality>
+        <occupation type="" from="" to=""></occupation>
+        <residence></residence>
+        <note>
+            <p></p>
+        </note>
     </person>
 </listPerson>
 ```
