@@ -13,19 +13,20 @@ A more torward definitive tag composition is placed after the code examples, as 
     4. [List Persons](#4-list-persons)
     5. [List Places](#5-list-places)
     6. [List Witnesses](#6-list-witnesses)
-    7. [~~List Animalia~~](#7-list-animalia)
-    8. [~~List Plantae~~](#8-list-animalia)
+    7. [List Animalia](#7-list-animalia)
+    8. [List Plantae](#8-list-plantae)
 
 * [TEI Text](#tei-text)
 
     1. [Page beginning](#1-page-beginning)
     2. [Line beginning](#2-line-beginning)
     3. [Choices](#3-choices)
-    4. [~~Numbers and Measures~~](#4-numbers-and-measures)
+    4. [Numbers and Measures](#4-numbers-and-measures)
     5. [~~Dates~~](#5-dates)
     6. [~~Notes~~](#6-notes)
-    7. [~~Geographic Location~~](#7-geographic-location)
-    8. [Critical Apparatus](#8-critical-apparatus)
+    7. [~~Quotes~~](#7-quotes)
+    8. [~~Geographic Location~~](#8-geographic-location)
+    9. [Critical Apparatus](#9-critical-apparatus)
 
 
 <br/>
@@ -318,25 +319,50 @@ __Proposed (WIP)__
 <br/>
 
 #### 7. List Animalia
-tags : [` `]()
+tags : [`list`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) [`item`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) [`listNym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listNym.html) [`nym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html)
 
-Yet to define proper method.
 <!-- TODO MM : animalia yet to define proper method -->
 
 __Examples:__
 ```xml
-<!-- MM: this is a personal draft -->
+<!-- MM: personal draft -->
+
+<!-- Note:
+    This structure intends to keep animal instances listed and enables
+    other initiatives to list these instances, without compromise
+    a scientific identification of the species through a <idno> URI -->
+
 <sourceDesc>
     <listPerson></listPerson>
-    <list type="animal">
-        
+    <list type="taxonomy">    <!-- z3998 standards: https://www.daisy.org/z3998/2012/vocab/structure/ -->
+        <list type="animalia">    <!-- scientific term of class Kingdom -->
+            <item xml:id="ani.bac">
+                <name xml:lang="pt">Bacalhau</name>
+                <location></location>
+                <note>Lorem Ipsum</note>
+            </item>
+        </list>
+        <list type="plantae"></list>    <!-- scientific term of class Kingdom -->
     </list>
+
     <!-- [...] -->
+
+    <listNym>    <!-- maybe too much, as specie id confirmation isn't precise -->
+        <listNym type="animalia">
+            <nym xml:id="">
+                <form>
+                    <orth xml:lang=""></orth>
+                </form>
+                <idno type="URI"></idno>
+            </nym>
+        </listNym>
+        <listNym type="plantae"></listNym>
+    </listNym>
 </sourceDesc>
 
-<!-- [...] -->
+<!-- <text> -->
 
-
+<name ref="#ani.bac">bacalhau</name>
 
 ```
 
@@ -351,13 +377,51 @@ __Proposed (WIP)__
 <br/>
 
 #### 8. List Plantae
-tags : [` `]()
+tags : [`list`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) [`item`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) [`listNym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listNym.html) [`nym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html)
 
-Yet to define proper method.
 <!-- TODO MM : plantae yet to define proper method -->
 
 __Examples:__
 ```xml
+<!-- MM: personal draft -->
+
+<!-- Note:
+    This structure intends to keep plant instances listed and enables
+    other initiatives to list these instances, without compromise
+    a scientific identification of the species through a <idno> URI -->
+
+<sourceDesc>
+    <listPerson></listPerson>
+    <list type="taxonomy">    <!-- z3998 standards: https://www.daisy.org/z3998/2012/vocab/structure/ -->
+        <list type="animalia"></list>    <!-- scientific term of class Kingdom -->
+        <list type="plantae">            <!-- scientific term of class Kingdom -->
+            <item xml:id="pla.malagueta">
+                <name xml:lang="pt">Malagueta</name>
+                <location></location>
+                <note>Lorem Ipsum</note>
+            </item>
+        </list>
+    </list>
+
+    <!-- [...] -->
+
+    <listNym>    <!-- maybe too much, as specie id confirmation isn't precise -->
+        <listNym type="animalia"></listNym>
+        <listNym type="plantae">
+            <nym xml:id="">
+                <form>
+                    <orth xml:lang=""></orth>
+                </form>
+                <idno type="URI"></idno>
+            </nym>
+        </listNym>
+    </listNym>
+</sourceDesc>
+
+<!-- <text> -->
+
+<name ref="#pla.malagueta">malaguetas</name>
+
 ```
 
 <br/>
@@ -490,40 +554,83 @@ __Proposed (WIP)__
 <br/>
 
 #### 4. Numbers and Measures
-<!-- TODO MM : numbers and measures content -->
-tags : [`num`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html) [`measure`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-measure.html) [`unit`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unit.html)
+TEI Guidelines : [3.6.3 Numbers and Measures](https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONANU)  
+
+tags : [`num`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html) [`measure`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-measure.html) [`unit`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unit.html) [`unitDef`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-unitDef.html)  
+att :  
+`<unit>` `<measure>` [att.measurement](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.measurement.html) `@unit` `@unitRef` `@quantify` `@commodity`  
+`<num>` [att.ranging](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.ranging.html) `@atLeast` `@atMost` `@min` `@max` `@confidence`
+
+__Examples:__
 ```xml
+<num type="roman" value="33">xxxiii</num> <!-- include more semantic -->
+<num type="cardinal" value="21">twenty-one</num>
+<num type="percentage" value="10">ten percent</num>
+<num type="percentage" value="10">10%</num>
+<num type="ordinal" value="5">5th</num>
+
+<measure type="distance" unit="m" quantity="3218.69">two miles</measure>
+
+<measure>
+    <num type="cardinal" value="3">3</num>
+    <unit type="time" unit="min">minute</unit>
+</measure>
+
 ```
 
 <br/>
 
 __Proposed (WIP)__
 ```xml
+<!-- TODO MM : add commom applications of the ESO text -->
 ```
 [&#x25b2; Return to Index](#index)
 
 <br/>
 
 #### 5. Dates
-<!-- TODO MM : dates content -->
-tags :
+TEI Guidelines : [13.4 Dates](https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDDATE)  
+
+tags : [`date`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) [`time`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-time.html)
+
+att : [`att.datable`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.html) `@calendar` `@period` [att.datable.w3c](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.w3c.html) `@when` `@notBefore` `@notAfter` `@from` `@to`
+
+__Examples:__
 ```xml
+<p>On the <date when="1917-07-02">second day of July 1917</date> nothing
+happened, but on the <date when="1917-07-03">next day</date>, there
+was a major event.</p>
+
+<date when="2001-09-11T08:48:00">Sept 11th, 12 minutes before 9 am</date>
+<time when="14:12:38">fourteen twelve and 38 seconds</time>
+
+<p>He was born on <date calendar="#gregorian" when="1732-02-22">Feb. 22, 1732</date>
+(<date calendar="#julian" when="1732-02-22">Feb. 11, 1731/32,O.S.</date>).</p>
+
 ```
 
 <br/>
 
 __Proposed (WIP)__
 ```xml
+<date when="YYYY-MM-DD"></date>
+<date clendar="#" when="YYYY-MM-DD"></date>
+<date when="YYYY-MM-DDTHH:MM:SS"></date>
+<time when="HH:MM:SS"></time>
 ```
 [&#x25b2; Return to Index](#index)
 
 <br/>
 
 #### 6. Notes
-<!-- TODO MM : notes content -->
-tags :
+Tei Guidelines : [3.9 Notes, Annotation, and Indexing](https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONO)  
 
-[note on app example](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-app.html#index-egXML-d39e91097)
+tags : [`note`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html) []()
+
+att :  
+[`att.placement`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.placement.html) `@place`  
+
+__Examples:__
 ```xml
 ```
 
@@ -536,7 +643,24 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 7. Geographic Location
+#### 7. Quotes
+tags : [` `]()
+
+__Examples:__
+```xml
+```
+
+<br/>
+
+__Proposed (WIP)__
+```xml
+```
+
+[&#x25b2; Return to Index](#index)
+
+<br/>
+
+#### 8. Geographic Location
 <!-- TODO MM : improve content -->
 tags : [`geoDecl`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geoDecl.html) [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geo.html)
 
@@ -569,7 +693,7 @@ __Proposed (WIP)__
 
 <br/>
 
-#### 8. Critical Apparatus
+#### 9. Critical Apparatus
 tags : [`app`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-app.html) [`lem`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-lem.html) [`rdg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-rdg.html)
 
 TEI Chapter [12. Critical Apparatus](https://tei-c.org/release/doc/tei-p5-doc/en/html/TC.html)
@@ -625,7 +749,7 @@ __Proposed (WIP)__
 <!-- ######################################## TOPIC Template:
 
 #### 14. Critical Apparatus
-tags : [``]()
+tags : [` `]()
 
 __Examples:__
 ```xml
