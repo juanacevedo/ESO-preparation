@@ -22,7 +22,7 @@ A more torward definitive tag composition is placed after the code examples, as 
     2. [Line beginning](#2-line-beginning)
     3. [Choices](#3-choices)
     4. [Numbers and Measures](#4-numbers-and-measures)
-    5. [~~Dates~~](#5-dates)
+    5. [Dates](#5-dates)
     6. [~~Notes~~](#6-notes)
     7. [~~Quotes~~](#7-quotes)
     8. [~~Geographic Location~~](#8-geographic-location)
@@ -85,6 +85,9 @@ __Proposed (WIP)__
 <br/>
 
 #### 2. List Objects
+TEI Guidelines : [13.2.4 Object Names](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDOBJN)  
+TEI Guidelines : [13.3.5 Objects](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDOBJ)  
+
 tags : [`listObject`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listObject.html)  [`object`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-object.html)
 
 __Example:__ [`object`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-object.html)
@@ -122,9 +125,9 @@ __Proposed (WIP)__
 <br/>
 
 #### 3. List Organizations
-tags : [`listOrg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listOrg.html) [`org`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html)
+TEI Guidelines : [13.2.2 Organizational Names](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDORG)  
 
-Contains a list of elements, each of which provides information about an identifiable organization.
+tags : [`listOrg`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listOrg.html) [`org`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html)  
 
 __Example:__ [`org`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-org.html)
 ```xml
@@ -156,6 +159,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 4. List Persons
+TEI Guidelines : [13.3.2 The Person Element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSE)  
+
 tags : [`listPerson`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPerson.html) [`person`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-person.html)
 
 Contains a list of descriptions, each of which provides information about an identifiable person or a group of people, for example the participants in a language interaction, or the people referred to in a historical source.
@@ -226,6 +231,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 5. List Places
+TEI Guidelines : [13.3.4 Places](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOG)  
+
 tags : [`listPlace`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPlace.html) [`place`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-place.html)
 
 Contains a list of places, optionally followed by a list of relationships (other than containment) defined amongst them.
@@ -274,6 +281,9 @@ __Proposed (WIP)__
 <br/>
 
 #### 6. List Witnesses
+TEI Guidelines : [12.1.4 Witness Information](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPLW)  
+TEI Guidelines : [12.1.4.3 The Witness List](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPWL)  
+
 tags : [`listWit`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-listWit.html) [`witness`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-witness.html)
 
 Lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
@@ -319,6 +329,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 7. List Animalia
+Lists animals references along the base text, with the single purpose of noting their occurrence.  
+
 tags : [`list`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) [`item`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) [`listNym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listNym.html) [`nym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html)
 
 <!-- TODO MM : animalia yet to define proper method -->
@@ -377,6 +389,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 8. List Plantae
+Lists plants references along the base text, with the single purpose of noting their occurrence.  
+
 tags : [`list`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) [`item`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) [`listNym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listNym.html) [`nym`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html)
 
 <!-- TODO MM : plantae yet to define proper method -->
@@ -510,6 +524,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 3. Choices
+TEI Guidelines : [3.5 Simple Editorial Changes](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COED)  
+
 tags : [`choice`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) [`abbr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abbr.html) [`corr`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) [`expan`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-expan.html) [`orig`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) [`reg`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) [`sic`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) [`unclear`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html)
 
 Groups a number of alternative encodings for the same point in a text.
@@ -661,7 +677,8 @@ __Proposed (WIP)__
 <br/>
 
 #### 8. Geographic Location
-<!-- TODO MM : improve content -->
+TEI Guidelines : [13.3.4 Places](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOG)
+
 tags : [`geoDecl`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geoDecl.html) [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-geo.html)
 
 __Examples:__ [`location`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-location.html) [`geo`](https://tei-c.org/release/doc/tei-p5-doc/en/html/examples-geo.html)
